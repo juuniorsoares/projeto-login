@@ -29,6 +29,9 @@ section#login{
     transform: translate(-50%, -50%);
     overflow: hidden;
     border-radius: 15px;
+
+    transition: width .3s height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
