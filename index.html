@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tela-login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/media-query.css">
 </head>
@@ -11,14 +12,29 @@
     <main>
         <section id="login">
             <div id="imagem">
-
+                <!---SEGUE A IMAGEM NO CSS-->
             </div>
             <div id="formulario">
                 <h1>LOGIN</h1>
                 <p>Seja Bem-vindo(a) novamente.Faça login para acessar sua conta 
                     e poder fazer configurações em seu ambiente.
                 </p>
-            </div>
+                 <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" autocomplete="email" maxlength="30" required placeholder="seu email">
+                        <label for="iemail">Email</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" minlength="8" max="20" required placeholder="sua senha">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="login.html">esqueci minha senha</a>
+                    <span class="material-symbols-outlined">mail</span>
+                </form>
+                </div>
         </section>
     </main>
 </body>
