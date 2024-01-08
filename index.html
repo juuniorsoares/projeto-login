@@ -30,16 +30,28 @@
                         <input type="password" name="senha" id="isenha" autocomplete="current-password" minlength="8" max="20" required placeholder="sua senha">
                         <label for="isenha">Senha</label>
                     </div>
-                    <span class="material-symbols-outlined" onclick="mostrarSenha()">visibility</span>
+                    <span class="material-symbols-outlined" id="icon" onclick="mostrarSenha()">visibility</span>
 
                     <input type="submit" value="Entrar">
                     <a href="login.html" class="botao">
                         esqueci minha senha
                         <i class="material-symbols-outlined">mail</i>
                     </a>
-                    
                 </form>
                 </div>
         </section>
     </main>
+    <script>
+        const password = document.getElementById('isenha')
+        const icon = document.getElementById('icon') 
+        
+        function mostrarSenha(){
+            if(password.type === "password"){
+                password.setAttribute('type', 'text');
+            }else{
+                password.setAttribute('type', 'password');
+            }
+        }
+    </script>
+</body>
 </html>
