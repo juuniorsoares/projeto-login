@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+    /*CONFIGURAÇÕES PARA TABLET*/
+
     body{
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
@@ -22,6 +24,8 @@
 }
 
 @media screen and (min-width : 992px){
+    /*CONFIGURÇÕES PARA DESKTOPS*/
+
     body{
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
